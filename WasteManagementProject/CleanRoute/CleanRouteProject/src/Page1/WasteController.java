@@ -2,6 +2,7 @@ package Page1;
 
 import java.util.Scanner;
 
+
 //Strategy - Location Choice
 abstract class DumpLocation {
     RecyclableLocation recyclableLocation;
@@ -84,6 +85,8 @@ class HazardousHandler extends WasteHandler {
     public void segregateWaste(Waste waste, String specific_waste, String d, String e, String f, String g) {
         if (specific_waste.equalsIgnoreCase("hazard")) {
             System.out.println("Weight of waste before emptying hazardous waste: " + waste.getWeight());
+            //Checking statement for jenkins job working
+            System.out.println();
             System.out.println("Enter the weight of the hazardous waste: ");
             weight[0] = Integer.parseInt(g);
             waste.setWeight(waste.getWeight() - weight[0]);
