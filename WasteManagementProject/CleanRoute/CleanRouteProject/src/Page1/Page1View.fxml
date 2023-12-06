@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="600.0" minWidth="600.0" prefHeight="800.0" prefWidth="823.0" style="-fx-background-color: #EAEDED; -fx-border-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Page1.Page1ViewController">
+   <children>
+      <Separator layoutY="83.0" prefHeight="0.0" prefWidth="800.0" />
+      <Label layoutY="-3.0" prefHeight="84.0" prefWidth="823.0" style="-fx-background-color: #566573;" />
+      <Label layoutX="22.0" layoutY="106.0" prefHeight="676.0" prefWidth="758.0" style="-fx-background-color: #CCD1D1; -fx-background-radius: 20;" />
+      <Label layoutX="42.0" layoutY="162.0" prefHeight="21.0" prefWidth="384.0" text="Enter truck's initial weight:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="42.0" layoutY="214.0" prefHeight="21.0" prefWidth="384.0" text="Enter truck's final weight:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="42.0" layoutY="252.0" prefHeight="43.0" prefWidth="340.0" text="Enter types of waste present (space separated):">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="295.0" prefHeight="43.0" prefWidth="626.0" text="Enter Wait of Waste Mentioned Below: (If there is No waste Leave Blank)">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="initialtruckweight" layoutX="253.0" layoutY="157.0" promptText="Truck initial weight" />
+      <TextField fx:id="finaltruckweight" layoutX="253.0" layoutY="209.0" promptText="Truck Final Weight" />
+      <TextField fx:id="garbagetypes" layoutX="382.0" layoutY="258.0" prefHeight="31.0" prefWidth="363.0" promptText="Mention Waste type Space Seprated" />
+      <Label layoutX="106.0" layoutY="364.0" prefHeight="43.0" prefWidth="112.0" text="Plastic Waste" textFill="#bc0404">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="246.0" layoutY="364.0" prefHeight="43.0" prefWidth="112.0" text="Glass Waste" textFill="#bc0404">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="370.0" layoutY="364.0" prefHeight="43.0" prefWidth="112.0" text="Wet Waste" textFill="#bc0404">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="494.0" layoutY="364.0" prefHeight="43.0" prefWidth="112.0" text="Hazard Waste" textFill="#bc0404">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="64.0" fitWidth="64.0" layoutX="132.0" layoutY="401.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@plastic.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="71.0" fitWidth="67.0" layoutX="261.0" layoutY="400.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Glass.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="51.0" fitWidth="67.0" layoutX="511.0" layoutY="410.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@hazard.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="67.0" fitWidth="67.0" layoutX="369.0" layoutY="401.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@wet.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="94.0" layoutY="356.0" opacity="0.24" prefHeight="155.0" prefWidth="124.0" style="-fx-background-color: gray; -fx-background-radius: 20;" />
+      <Label layoutX="236.0" layoutY="356.0" opacity="0.24" prefHeight="155.0" prefWidth="112.0" style="-fx-background-color: gray; -fx-background-radius: 20;" />
+      <Label layoutX="359.0" layoutY="356.0" opacity="0.24" prefHeight="155.0" prefWidth="112.0" style="-fx-background-color: gray; -fx-background-radius: 20;" />
+      <Label layoutX="488.0" layoutY="357.0" opacity="0.24" prefHeight="155.0" prefWidth="112.0" style="-fx-background-color: gray; -fx-background-radius: 20;" />
+      <TextField fx:id="plastic" layoutX="111.0" layoutY="468.0" opacity="0.83" prefHeight="31.0" prefWidth="91.0" promptText="Weight" />
+      <TextField fx:id="glass" layoutX="247.0" layoutY="468.0" opacity="0.83" prefHeight="31.0" prefWidth="91.0" promptText="Weight" />
+      <TextField fx:id="wet" layoutX="369.0" layoutY="468.0" opacity="0.83" prefHeight="31.0" prefWidth="91.0" promptText="Weight" />
+      <TextField fx:id="hazard" layoutX="499.0" layoutY="468.0" opacity="0.83" prefHeight="31.0" prefWidth="91.0" promptText="Weight" />
+      <Button layoutX="668.0" layoutY="468.0" mnemonicParsing="false" onAction="#submit" text="Submit" />
+      <Label layoutX="31.0" layoutY="512.0" prefHeight="26.0" prefWidth="54.0" text="Logs:" textFill="#ab0000">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="msg1" layoutX="31.0" layoutY="538.0" prefHeight="64.0" prefWidth="717.0" style="-fx-background-color: #CCD1D1;" />
+      <Label fx:id="msg2" layoutX="31.0" layoutY="602.0" prefHeight="26.0" prefWidth="717.0" style="-fx-background-color: #CCD1D1;" />
+      <Label fx:id="msg3" layoutX="31.0" layoutY="628.0" prefHeight="31.0" prefWidth="717.0" style="-fx-background-color: #CCD1D1;" />
+      <Label fx:id="msg4" layoutX="31.0" layoutY="659.0" prefHeight="26.0" prefWidth="717.0" style="-fx-background-color: #CCD1D1;" />
+      <Label fx:id="msg5" layoutX="31.0" layoutY="685.0" prefHeight="31.0" prefWidth="717.0" style="-fx-background-color: #CCD1D1;" />
+      <Label fx:id="msg6" layoutX="31.0" layoutY="716.0" prefHeight="26.0" prefWidth="717.0" style="-fx-background-color: #CCD1D1;" />
+      <Label fx:id="msg7" layoutX="31.0" layoutY="742.0" prefHeight="31.0" prefWidth="717.0" style="-fx-background-color: #CCD1D1;" />
+      <Label layoutX="111.0" layoutY="24.0" text="Waste Segregation Management  &amp; Routing Optimization" textFill="#d74f4f">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Button layoutX="726.0" layoutY="9.0" mnemonicParsing="false" onAction="#close" prefHeight="31.0" prefWidth="67.0" text="close" />
+      <ImageView fitHeight="84.0" fitWidth="91.0" layoutX="11.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@headlogo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="634.0" layoutY="370.0" prefHeight="31.0" prefWidth="135.0" text="Driver Cost:-">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="drivercost" layoutX="634.0" layoutY="410.0" prefHeight="31.0" prefWidth="124.0" textFill="#a80000">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font></Label>
+      <Label fx:id="finallab" layoutX="33.0" layoutY="106.0" prefHeight="43.0" prefWidth="728.0" />
+      <Button layoutX="726.0" layoutY="49.0" mnemonicParsing="false" onAction="#aboutus" text="About us" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,8 @@
+Dependies Javafx SDK 19.1
+Dependies Java SE 11 (WORKS BEST)
+
+ADD SDK IN THIS PROJECT BEFORE USING 
+FILE<PROJECT<PROJECT STRUCTURE<LIBRARY<+<JAVA<{path to lib Folder of Java SDK 19.1}
+
+Configure Modify Run Configurations.
+--module-path "<PATH TO JAVA FX lib Folder>" --add-modules javafx.controls,javafx.fxml

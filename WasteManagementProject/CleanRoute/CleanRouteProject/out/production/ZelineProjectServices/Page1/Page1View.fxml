@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane minHeight="800.0" minWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="Page1.Page1ViewController">
+   <children>
+      <Label layoutX="39.0" layoutY="27.0" prefHeight="31.0" prefWidth="617.0" text="Welcome to Page-1">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="598.0" layoutY="771.0" text="\@ZelineProjects" />
+      <Separator layoutY="83.0" prefHeight="0.0" prefWidth="800.0" />
+   </children>
+</AnchorPane>
