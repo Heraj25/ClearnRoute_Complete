@@ -2,6 +2,7 @@ package Page1;
 
 import java.util.Scanner;
 
+
 //Strategy - Location Choice
 abstract class DumpLocation {
     RecyclableLocation recyclableLocation;
