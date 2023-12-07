@@ -388,7 +388,7 @@ public class WasteController {
         System.out.println("Waste weight: " + waste.getWeight());
 
         msg2="Segregating the waste...";
-        msg7="SDK_ZelineProjects//rUNNNING";
+        msg7="CleanRoute: Waste Segregation Management Project Running Successfully.";
         msg3=d+e+f+g;
         System.out.print("Enter types of waste present (space separated): ");
         String[] waste_present = c.split(" ");
