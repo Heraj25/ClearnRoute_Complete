@@ -170,6 +170,8 @@ class PaymentInfoFactory {
                 return new WetWastePaymentInfo();
             default:
                 throw new Exception("Invalid waste type: " + wasteType);
+
+
         }
     }
 }
