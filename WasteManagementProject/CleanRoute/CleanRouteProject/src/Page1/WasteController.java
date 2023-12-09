@@ -110,7 +110,7 @@ class PlasticHandler extends WasteHandler {
             System.out.println("Weight of waste after emptying plastic waste: " + waste.getWeight());
         } else {
             System.out.println("Wrong input");
-            System.out.println();
+            System.out.println("Please enter again.");
         }
     }
 }
